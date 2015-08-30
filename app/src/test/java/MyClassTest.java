@@ -23,11 +23,11 @@ public class MyClassTest {
 		assertEquals(myClass.surname, "Gecius");
 	}
 
-//	@Test
-//	public void failingTest() {
-//		MyClass myClass = new MyClass();
-//		assertEquals(myClass.surname, "Dzigajevas");
-//	}
+	@Test
+	public void failingTest() {
+		MyClass myClass = new MyClass();
+		assertEquals(myClass.surname, "Dzigajevas");
+	}
 
 
 }
