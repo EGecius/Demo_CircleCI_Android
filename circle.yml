@@ -12,15 +12,15 @@ machine:
 
 dependencies:
     override:
-        - echo y | android update sdk --no-ui --all --filter tools,build-tools-23.0.0,android-23
+        - echo y | android update sdk --no-ui --all --filter tools
         - ANDROID_HOME=/usr/local/android-sdk-linux ./gradlew dependencies
 
 test:
     override:
         - (./gradlew assemble):
             timeout: 360
-#        - (./gradlew test):
-#            timeout: 360
+        - (./gradlew test):
+            timeout: 360
 #        - emulator -avd circleci-android22 -no-audio -no-window:
 #            background: true
 #            parallel: true
