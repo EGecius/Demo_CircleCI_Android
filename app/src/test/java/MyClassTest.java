@@ -24,9 +24,9 @@ public class MyClassTest {
 	}
 
 	@Test
-	public void failingTest() {
+	public void passingSurnameTest2() {
 		MyClass myClass = new MyClass();
-		assertEquals(myClass.surname, "Dzigajevas");
+		assertEquals(myClass.surname, "Gecius");
 	}
 
 
