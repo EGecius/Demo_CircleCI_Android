@@ -13,10 +13,10 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 		super(Application.class);
 	}
 
-	@MediumTest
-	public void testFailing() {
-		assertEquals(false, true);
-	}
+//	@MediumTest
+//	public void testFailing() {
+//		assertEquals(false, true);
+//	}
 
 	@MediumTest
 	public void testPassing() {
