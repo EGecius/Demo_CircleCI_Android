@@ -21,5 +21,4 @@ test:
             timeout: 360
         - (./gradlew test):
             timeout: 360
-        - (./gradlew lint):
-            timeout: 60
+        - adb install path/to/build.apk
