@@ -21,3 +21,5 @@ test:
             timeout: 360
         - (./gradlew test):
             timeout: 360
+        - (./gradlew lint):
+            timeout: 60
