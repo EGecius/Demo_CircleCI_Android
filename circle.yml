@@ -26,7 +26,7 @@ test:
             parallel: true
         - circle-android wait-for-boot
 
-#        - adb install /home/ubuntu/Demo_CircleCI_Android/app/build/outputs/apk/app-debug.apk
+        - adb install /home/ubuntu/Demo_CircleCI_Android/app/build/outputs/apk/app-debug.apk
 
     # run tests  against the emulator.
         - (./gradlew connectedAndroidTest):
