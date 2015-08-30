@@ -21,4 +21,4 @@ test:
             timeout: 360
         - (./gradlew test):
             timeout: 360
-        - adb install path/to/build.apk
+        - cp -r Demo_CircleCI_Android/build/outputs $CIRCLE_ARTIFACTS
