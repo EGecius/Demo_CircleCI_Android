@@ -21,4 +21,7 @@ test:
             timeout: 360
         - (./gradlew test):
             timeout: 360
-        - cp -r Demo_CircleCI_Android/build/outputs $CIRCLE_ARTIFACTS
+        - emulator -avd circleci-android22 -no-audio -no-window:
+            background: true
+            parallel: true
+        - circle-android wait-for-boot
