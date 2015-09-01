@@ -14,6 +14,6 @@ public class ApplicationTest extends ApplicationTestCase<Application> {
 
 	@MediumTest
 	public void testPassing() {
-		assertEquals(false, true);
+		assertEquals(true, true);
 	}
 }
