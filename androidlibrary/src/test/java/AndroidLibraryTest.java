@@ -11,14 +11,14 @@ import static junit.framework.Assert.assertEquals;
  */
 public class AndroidLibraryTest {
 
-	@Test
-	public void failingTest() {
-		AndroidLibrary library = new AndroidLibrary();
-
-		String field = library.getField();
-
-		assertEquals("nonsense", field);
-	}
+//	@Test
+//	public void failingTest() {
+//		AndroidLibrary library = new AndroidLibrary();
+//
+//		String field = library.getField();
+//
+//		assertEquals("nonsense", field);
+//	}
 
 	@Test
 	public void passingTest() {
