@@ -20,7 +20,7 @@ test:
             timeout: 360
         - (./gradlew test):
             timeout: 360
-     start the emulator
+            
         - emulator -avd circleci-android22 -no-audio -no-window:
             background: true
             parallel: true
@@ -28,6 +28,5 @@ test:
 
         - adb install /home/ubuntu/Demo_CircleCI_Android/app/build/outputs/apk/app-debug.apk
 
-     run tests  against the emulator.
         - (./gradlew connectedAndroidTest):
             timeout: 360
