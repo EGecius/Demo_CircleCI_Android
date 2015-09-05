@@ -1,3 +1,5 @@
+package experimental;
+
 import com.egecius.demo_circleci_android.MyClass;
 
 import org.junit.Test;
