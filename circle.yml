@@ -12,7 +12,7 @@ machine:
 
 dependencies:
     override:
-#        - echo y | android update sdk --no-ui --all --filter tools
+        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.1,android-23
 
 test:
     override:
@@ -23,7 +23,7 @@ test:
         - (./gradlew check):
             timeout: 360
 
-        - emulator -avd circleci-android22 -no-audio -no-window:
+        - emulator -avd circleci-android23 -no-audio -no-window:
             background: true
             parallel: true
         - circle-android wait-for-boot
