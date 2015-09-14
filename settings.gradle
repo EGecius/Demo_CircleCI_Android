@@ -1,1 +1,1 @@
-include ':app', ':androidlibrary', ':ui', ':interfaces'
+include ':app', ':ui', ':playerimpl', ':interfaces'

@@ -1,8 +1,7 @@
-package com.egecius.androidlibrary;
+package com.example.egidijusgecius.playerimpl;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
-import android.test.suitebuilder.annotation.MediumTest;
 
 /**
  * <a href="http://d.android.com/tools/testing/testing_android.html">Testing Fundamentals</a>
@@ -10,10 +9,5 @@ import android.test.suitebuilder.annotation.MediumTest;
 public class ApplicationTest extends ApplicationTestCase<Application> {
 	public ApplicationTest() {
 		super(Application.class);
-	}
-
-	@MediumTest
-	public void testPassing() {
-		assertEquals(true, true);
 	}
 }

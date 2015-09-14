@@ -4,9 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.TextView;
 
-import com.egecius.androidlibrary.AndroidLibrary;
 
 public class MainActivity extends Activity {
 
@@ -14,16 +12,6 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-		setTextView();
-	}
-
-	private void setTextView() {
-		AndroidLibrary libraryClass = new AndroidLibrary();
-		String field = libraryClass.getField();
-
-		TextView textView = (TextView) findViewById(R.id.text_view);
-		textView.setText(field);
 	}
 
 	@Override
