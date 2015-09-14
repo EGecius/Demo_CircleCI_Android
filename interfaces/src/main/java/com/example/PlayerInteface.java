@@ -7,5 +7,5 @@ package com.example;
  */
 public interface PlayerInteface {
 
-	void testPlayerMethod();
+	void testPlayerMethod(DataType type);
 }

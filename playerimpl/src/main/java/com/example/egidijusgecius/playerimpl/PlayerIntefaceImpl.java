@@ -1,5 +1,6 @@
 package com.example.egidijusgecius.playerimpl;
 
+import com.example.DataType;
 import com.example.PlayerInteface;
 
 /**
@@ -9,7 +10,7 @@ import com.example.PlayerInteface;
  */
 public class PlayerIntefaceImpl implements PlayerInteface {
 	@Override
-	public void testPlayerMethod() {
+	public void testPlayerMethod(DataType type) {
 
 	}
 }
