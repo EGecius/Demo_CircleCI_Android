@@ -16,7 +16,7 @@ dependencies:
 
 test:
     override:
-        - (./gradlew assemble):
+        - (./gradlew assemble -PdisablePreDex):
             timeout: 360
 #        - (./gradlew test):
 #            timeout: 360
