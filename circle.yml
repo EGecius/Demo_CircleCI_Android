@@ -12,23 +12,23 @@ machine:
 
 dependencies:
     override:
-        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.1,android-22
+        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.1,android-23
 
 test:
     override:
-        - (./gradlew assemble):
+        - (./gradlew assemble -PdisablePreDex):
             timeout: 360
-        - (./gradlew test):
-            timeout: 360
-        - (./gradlew check):
-            timeout: 360
-
-        - emulator -avd circleci-android23 -no-audio -no-window:
-            background: true
-            parallel: true
-        - circle-android wait-for-boot
-
-        - adb install /home/ubuntu/Demo_CircleCI_Android/app/build/outputs/apk/app-debug.apk
-
-        - (./gradlew connectedAndroidTest):
-            timeout: 360
+#        - (./gradlew test):
+#            timeout: 360
+#        - (./gradlew check):
+#            timeout: 360
+#
+#        - emulator -avd circleci-android22 -no-audio -no-window:
+#            background: true
+#            parallel: true
+#        - circle-android wait-for-boot
+#
+#        - adb install /home/ubuntu/Demo_CircleCI_Android/app/build/outputs/apk/app-debug.apk
+#
+#        - (./gradlew connectedAndroidTest):
+#            timeout: 360
