@@ -7,6 +7,8 @@ package com.egecius.demo_circleci_android;
  */
 public class MyClass {
 
+	/** Name */
 	public final String name = "Egis";
+	/** My surname */
 	public final String surname = "Gecius";
 }

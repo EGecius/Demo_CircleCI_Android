@@ -1,19 +1,19 @@
-apply plugin: 'com.android.application'
 apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
 
-check.dependsOn 'findbugs', 'pmd', 'lint'
+check.dependsOn 'findbugs', 'pmd', 'lint', 'checkstyle'
 
 task checkstyle(type: Checkstyle) {
     description 'checks whehter code style of source code mathes set criteria'
     group 'verification'
-    configFile file("${project.rootDir}/config/quality/checkstyle/checkstyle.xml")
+    configFile file("${project.rootDir}/config/quality/checkstyle/checkstyleAllErrors.xml")
     configProperties.checkstyleSuppressionsPath = file("${project.rootDir}/config/quality/checkstyle/suppressions.xml").absolutePath
     source 'src'
     include '**/*.java'
-    exclude '**/gen/**'
+    exclude '**/gen/**', 'test/**', 'androidTest/**'
     classpath = files()
+    ignoreFailures = false
 }
 
 task findbugs(type: FindBugs, dependsOn: assembleDebug) {

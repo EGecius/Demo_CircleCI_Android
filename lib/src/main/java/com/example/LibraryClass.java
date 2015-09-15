@@ -1,9 +1,13 @@
 package com.example;
 
-public class LibraryClass {
+/** library class */
+@SuppressWarnings ("CheckStyle")
+public final class LibraryClass {
 
-	private String field = "Library field";
+	/** inner field */
+	@SuppressWarnings ("FieldCanBeLocal") private String field = "Library field";
 
+	/** Returns field */
 	public String getField() {
 		return field;
 	}

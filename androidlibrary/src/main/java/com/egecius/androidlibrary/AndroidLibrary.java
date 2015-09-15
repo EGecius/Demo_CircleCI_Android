@@ -7,9 +7,10 @@ package com.egecius.androidlibrary;
  */
 public class AndroidLibrary {
 
-	private String field = "Android Library field";
+	/** Inner field */
+	@SuppressWarnings ("FieldCanBeLocal") private String field = "Android Library field";
 
-	public String getField() {
+	public final String getField() {
 		return field;
 	}
 }
