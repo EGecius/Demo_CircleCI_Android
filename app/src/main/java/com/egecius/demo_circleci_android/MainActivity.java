@@ -13,14 +13,6 @@ public class MainActivity extends Activity {
 	protected final void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-
-//		methoWithLineTooLongForCheckstyle();
-
-	}
-
-	private void methodWithLineTooLongForCheckstyle() {
-		String test = "testing";
-		test.toString().toString().toString().toString().toString().toString().toString().toString().toString().toString().toString().toString().toString().toString();
 	}
 
 	@Override

@@ -10,10 +10,6 @@
         <property name="fileExtensions" value=""/>
     </module>
 
-    <module name="SuppressionFilter">
-        <property name="file" value="${checkstyleSuppressionsPath}"/>
-    </module>
-
     <module name="TreeWalker">
         <property name="tabWidth" value="1"/>
         <module name="AnnotationUseStyle">
