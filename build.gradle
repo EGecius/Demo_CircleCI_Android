@@ -19,8 +19,9 @@ allprojects {
     }
 }
 
-project.ext.preDexLibs = !project.hasProperty('disablePreDex')
+/* disables pre-dexing on CI only */
 
+project.ext.preDexLibs = !project.hasProperty('disablePreDex')
 subprojects {
     project.plugins.whenPluginAdded { plugin ->
         if ("com.android.build.gradle.AppPlugin".equals(plugin.class.name)) {
