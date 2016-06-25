@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply from: '../config/quality/jacoco/jacoco.gradle'
 apply from: '../config/quality.gradle'
 apply from: '../config/versions.gradle'
 
