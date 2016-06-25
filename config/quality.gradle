@@ -2,8 +2,7 @@ apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
 
-// todo re-add 'pmd' task - CI was timing out on it
-check.dependsOn 'findbugs', 'lint', 'checkstyle'
+check.dependsOn 'checkstyle', 'findbugs', 'pmd', 'lint'
 
 task checkstyle(type: Checkstyle) {
     description 'checks whehter code style of source code mathes set criteria'
