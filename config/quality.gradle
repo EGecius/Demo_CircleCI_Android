@@ -2,7 +2,7 @@ apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
 
-// todo re-add 'pmd' task - CI was timing out on it
+// todo re-add 'pmd' task - CI was failing wit OutOfMemoryError
 check.dependsOn 'findbugs', 'lint', 'checkstyle'
 
 task checkstyle(type: Checkstyle) {
