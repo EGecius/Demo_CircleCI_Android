@@ -12,12 +12,12 @@ machine:
 
 dependencies:
     override:
-        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.3,android-24
+        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.3
 
 test:
     override:
         - (./gradlew assemble check -PdisablePreDex):
-            timeout: 360
+            timeout: 600
 
 #        - emulator -avd circleci-android22 -no-audio -no-window:
 #            background: true
