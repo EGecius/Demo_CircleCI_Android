@@ -1,3 +1,8 @@
 ext {
     compileSdkVersionValue = 23
+    buildToolsVersionValue = "23.0.3"
+    minSdkVersionValue = 15
+    targetSdkVersionValue = 23
+    supportLibraryVersion = "23.4.0"
+    junitVersion = "4.12"
 }
