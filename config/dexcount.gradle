@@ -1,0 +1,12 @@
+apply plugin: 'com.getkeepsafe.dexcount'
+
+dexcount {
+    format = "tree"
+    includeClasses = false
+    includeFieldCount = false
+    includeTotalMethodCount = true
+    orderByMethodCount = true
+    verbose = true
+    maxTreeDepth = 3
+    teamCityIntegration = false
+}
