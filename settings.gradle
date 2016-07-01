@@ -1,1 +1,1 @@
-include ':app', ':ui', ':playerimpl', ':interfaces', ':entities', ':i_a'
+include ':app', ':ui', ':playerimpl', ':interfaces', ':entities'
