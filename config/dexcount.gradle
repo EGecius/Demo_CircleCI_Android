@@ -6,7 +6,7 @@ dexcount {
     includeFieldCount = false
     includeTotalMethodCount = true
     orderByMethodCount = true
-    verbose = true
+    verbose = false
     maxTreeDepth = 3
     teamCityIntegration = false
 }
